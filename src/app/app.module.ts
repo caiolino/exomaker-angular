@@ -11,6 +11,7 @@ import { PoliticasComponent } from './politicas/politicas.component';
 import { FaqComponent } from './faq/faq.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProdutosComponent } from './produtos/produtos.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ContatoComponent,
     PoliticasComponent,
     FaqComponent,
-    SobreComponent
+    SobreComponent,
+    ProdutosComponent
   ],
   imports: [
     BrowserModule,
