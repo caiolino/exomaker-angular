@@ -1,0 +1,7 @@
+.card-cor{
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color:#353e81;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+}
