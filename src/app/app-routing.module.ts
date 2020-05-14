@@ -6,16 +6,19 @@ import { FaqComponent } from './faq/faq.component';
 import { PoliticasComponent } from './politicas/politicas.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { ProdutosComponent } from './produtos/produtos.component';
+import { Users } from './model/Users';
+import { UsersComponent } from './users/users.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: "home", pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'contato', component: ContatoComponent  },
+  { path: 'contato', component: ContatoComponent },
   { path: 'faq', component: FaqComponent },
   { path: 'politicas', component: PoliticasComponent },
   { path: 'sobre', component: SobreComponent },
-  {path: 'produtos', component: ProdutosComponent}
+  { path: 'produtos', component: ProdutosComponent },
+  { path: 'users', component: UsersComponent }
 ];
 
 @NgModule({

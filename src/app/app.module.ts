@@ -12,6 +12,8 @@ import { FaqComponent } from './faq/faq.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProdutosComponent } from './produtos/produtos.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UsersComponent } from './users/users.component'
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { ProdutosComponent } from './produtos/produtos.component';
     PoliticasComponent,
     FaqComponent,
     SobreComponent,
-    ProdutosComponent
+    ProdutosComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

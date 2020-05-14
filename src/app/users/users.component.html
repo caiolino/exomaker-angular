@@ -1,0 +1,20 @@
+<div class="container mt-5">
+    <h1 class="d-flex justify-content-center">Lista de usuários</h1>
+    <hr>
+</div>
+<div class="container mb-5 d-flex flex-wrap">
+    <div class="card mt-5 col-md-4" *ngFor="let users of listaUsers">
+        <div class="card-header">
+            <h5 class="card-title">Nome: {{users.nome}}</h5>
+        </div>
+        <div class="card-body">
+            <p>Id: {{users.id}}</p>
+            <hr>
+            <p>email: {{users.email}}</p>
+            <hr>
+            <p>Senha: (acho melhor não mostrar mas...) {{users.senha}}</p>
+            <hr>
+            <button class="btn btn-outline-info"> Ver Perfil</button>
+        </div>
+    </div>
+</div>

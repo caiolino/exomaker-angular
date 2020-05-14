@@ -1,26 +1,129 @@
-.logo{
-    width: 150px;
-    height: auto;
-    margin: -45px 0 -45px 0;
-}
-
-
-
 nav{
-    width: 70%;
-    margin: 0 auto;
+    box-shadow: 0 0 10px #00000069;
 }
 
-.menu{
-    background-color: rgb(243, 243, 243);
-    box-shadow: 0 3px 5px #00000015 ;
+nav a {
+    margin-left: 60px;
+    color:#353f80;
+    font-weight: bold;
+}
+.cont-icons{
+    margin-right: 60px;
+}
+.icon-navbar{
+    width: 30px;
+    margin: 20px;
+}
+.itens-nav{
+    margin-left: 50px;
+}
+.navbar-collapse a{
+    margin: 0;
+}
+.navbar-collapse ul a {
+    margin: 30px;
+    text-transform: uppercase;
+}
+.navbar-collapse ul a:visited {
+    color: #353f80;
+    text-decoration: none;
+}
+.cont-icons a{
+    font-weight: normal;
+}
+.navbar-collapse ul a:hover {
+    background: #353f80;
+    color: white;
+    border-radius: 10px;
+}
+.nav-separacao{
+    display: none;
+}
+.texto-carrinho{
+    display: none;
 }
 
-.nav-link:hover{
-    background-color: #697AFF;
-    color: #ffffff;
+
+
+
+
+/* media query */
+
+
+
+/* TABLET */
+@media screen and (max-width: 987px){
+    .cont-hamburguer{
+        margin-right: 30px;
+    }
+    nav a{
+        margin-left: 10px;
+    }
+    .cont-icons{
+        margin-left: 150px;
+        margin-top: 30px;
+        font-size: 1.5em;
+    }
+    .cont-icons a, img{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cont-icons a{
+        padding: 10px;
+    }
+    .cont-icons img{
+        margin-top: -5px;
+    }
+    
+    .texto-carrinho{
+        display: inline-flex;
+    }
+    .nav-separacao{
+        display: inline-flex;
+        border: 1px solid #353f80;
+        width: 50%;
+        margin-top: -22px;
+    }
+    .alinhar-mobile ul a {
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: -20px;
+    }
+    .alinhar-mobile {
+        margin-right: 70px;
+    }
 }
 
-a {
-    margin: 5px;
+/* MOBILE L */
+@media screen and (max-width: 590px){
+    .cont-icons {
+        margin-left: 115px;
+    }
+    .cont-icons img {
+        margin-left: 45px;
+    }
+    .align-mobile{
+        text-align: center;
+    }
+    .align-mobile-car{
+        margin-left: 30px;
+    }
+    .texto-carrinho{
+        margin-left: 25px;
+    }
 }
+
+/* CORREÇÕES BUG NAVBAR */
+@media screen and (max-width: 1221px){
+    nav li, a{
+        font-size: 0.9em;
+    }
+    .navbar-collapse ul a {
+        margin: 20px;
+        }
+    }
+@media screen and (max-width: 1105px){
+        nav li, a{
+            font-size: 0.8em;
+        }
+    }
