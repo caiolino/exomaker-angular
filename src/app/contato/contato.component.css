@@ -1,5 +1,20 @@
 .cor{
     color: #697afe;
 }
+.text-cor{
+    color: #353e80;
+}
 
+.button-cor{
+    color: #fff;
+    background-color: #353e80;
+    border-color: #353e80;
+}
+
+.button-cor:hover{
+    color: #353e80;
+    background-color: transparent;
+    background-image: none;
+    border-color: #353e80;
+}
 
