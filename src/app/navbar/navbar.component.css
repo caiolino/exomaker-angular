@@ -1,0 +1,26 @@
+.logo{
+    width: 150px;
+    height: auto;
+    margin: -45px 0 -45px 0;
+}
+
+
+
+nav{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.menu{
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 3px 5px #00000015 ;
+}
+
+.nav-link:hover{
+    background-color: #697AFF;
+    color: #ffffff;
+}
+
+a {
+    margin: 5px;
+}
