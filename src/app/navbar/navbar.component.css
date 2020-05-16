@@ -45,13 +45,18 @@ nav a {
 
 
 
-
-
 /* media query */
 
 
 
 /* TABLET */
+@media screen and (max-width: 991px){
+    .fixed-top{
+    position: relative;
+    top: auto;
+    }
+}
+
 @media screen and (max-width: 987px){
     .cont-hamburguer{
         margin-right: 30px;
