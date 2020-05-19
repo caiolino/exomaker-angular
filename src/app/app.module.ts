@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +14,8 @@ import { SobreComponent } from './sobre/sobre.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { HttpClientModule } from '@angular/common/http';
-import { UsersComponent } from './users/users.component'
+import { UsersComponent } from './users/users.component';
+import { CadastroComponent } from './cadastro/cadastro.component'
 
 @NgModule({
   declarations: [
@@ -26,13 +28,15 @@ import { UsersComponent } from './users/users.component'
     FaqComponent,
     SobreComponent,
     ProdutosComponent,
-    UsersComponent
+    UsersComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,130 +1,181 @@
-.titulo{
-    text-align: center;
-    margin: 80px;
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+body{
+    background-color: #fafafa;
+}
+h1{
+    font-weight: 800;
+    color:#353E80;
+}
 
+h5{
+    text-align: justify;
+    font-weight: 500;
+    color:#353E80;
 }
-.primeiroTexto{
-    text-align: center;
-    font-family: 'Cabin', 'Roboto';
+
+.text-main{
+    text-align: justify;
+    color:#000;
+    font-weight: 400;
 }
-.frasedeEfeito{
-    text-align: center;
+.caixa1{
+  padding-top: 40px;
 }
-.segundoTexto{
-    text-align: center;
-    font-family: 'Cabin', 'Roboto';
+.hr{
+    border: 0px;
+    height: 2px;
+    background-image: linear-gradient(-90deg, #697AFF, #353E80);
 }
-.segundoTitulo{
-    text-align: center;
-    margin: 80px;
-}
-main{
-    width: 70%;
+.cont{
+    max-width: 1100px;
     margin: 0 auto;
 }
-
-#baner{
-    width: 70%;
+.cont-bg{
+    max-width: 980px;
     margin: 0 auto;
+    padding: 10px;
+}
+
+
+.flex-main{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 75px;
 }
 
-#logo{
-    width: 299px;
-    height: auto;
-    margin-bottom: 15px;
-
+.img-main {
+    width: 900px;
 }
 
-.face{
-    width: 20px;
-    height: auto;
+.img-about{
+    padding: 50px 0;
+}
+.btn-main{
+    background-image: linear-gradient(-90deg, #697AFF, #353E80);
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.btn-main:hover{
+    background-image: none;
+    background-color: transparent;
+    border: 2px solid #353E80;
+    color: #353E80;
 }
 
-.insta{
-    margin-left: 20px;
-    width: 20px;
-    height: auto;
+.aboutint{
+    margin: 20px auto 10px;
 }
 
-.login{
-    width: 20px;
-    height: auto;
+figure.snip0078 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  min-width: 220px;
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  text-align: center;
+  margin: 20px 40px;
+  padding: 40px;
+}
+figure.snip0078 * {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+}
+figure.snip0078 img {
+  opacity: 1;
+  max-width: 100%;
+  border: 10px solid #000000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+figure.snip0078 figcaption {
+  bottom: 0;
+  width: 60%;
+  right: 0;
+  position: absolute;
+  background: #000000;
+  padding: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  box-shadow: 0 0px 10px -10px #000000;
+}
+figure.snip0078 figcaption h2,
+figure.snip0078 figcaption p {
+  margin: 0;
+  color: #ffffff;
+}
+figure.snip0078 figcaption h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+figure.snip0078 figcaption h2 span {
+  font-weight: 600;
+}
+figure.snip0078 figcaption p {
+  font-size: 0.9em;
+  font-weight: 500;
+  opacity: 0.65;
 }
 
-
-nav{
-    width: 50%;
-    margin: 0 auto;
+figure.snip0078.blue figcaption {
+  background: #353E80;
+  border-radius: 10px;
+}
+figure.snip0078.blue img {
+  border: 10px solid #353E80;
 }
 
-nav > ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding:0;
+figure.snip0078:hover figcaption,
+figure.snip0078.hover figcaption {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 15px -15px #000000;
 }
- nav > ul > li > a{
-     font-size: 25px;
-     text-decoration: none;
-     color: black;
- }
-
-
-.background{
-    background-color: #ebebeb;
-    font-family: 'Cabin', 'Roboto' ;
+figure.snip0078:hover.blue .foto,
+figure.snip0078.hover.blue .foto {
+  border: 10px solid #697AFF;
 }
 
-.titulo-alinhar {
-        text-align: center !important;
-        font-family: 'Cabin', Robotofont
-}
-.texto-alinhar{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-}
-#sobre-nos{
-    margin: 80px;
-}
-main{
-    width: 70%;
-    margin: 0 auto;
-}
-.caixa-contato {
-    background-color: rgb(230, 230, 230);
-    width: 1000px;
-    height: 500px;
-    box-shadow: 0 3px 5px #00000015;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.caixa-contato > img{
-    width: 400px;
-    height: auto;
-    margin-right: 20px;
-    border-radius: 20px;
-
-}
-.caixa-contato >h1{
-    text-align: center;
-    ;
-}
-.caixa-contato >p{
-    text-align: center;
-}
-
-.carrosel {
-    display: flex;
+.flex-icons{
     justify-content: center;
-    margin-right: 80px;
+    margin: 2px solid black;
+    
 }
-.fraseJoyce{
-    margin-left: 150px;
-    margin-top: 80px;
+.image{
+    width: 70px;
 }
+
+@media screen and (max-width: 1197px){
+
+    figure.snip0078{
+        margin: 20px;
+    }   
+      
+  }
+
+
+@media screen and (max-width: 991px){
+
+  .cont-bg{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  .flex-main{
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 700px;
+      margin-top: 70px;
+  }
+    
+}
+
