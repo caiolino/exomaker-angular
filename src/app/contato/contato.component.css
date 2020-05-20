@@ -1,4 +1,97 @@
+h2{
+    font-weight: 510;
+    font-size: 3em;
+}
+h4{
+    font-size: 1.2em;
+    color: #353E80;
+}
+
+.bg-login{
+    background: transparent url('/assets/undraw_contact_us.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width:100%;
+}
+
+.button{
+    background: transparent linear-gradient(270deg, #353E80 0%, #697AFF 100%) 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    color: white;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+}
+.button:hover{
+    background: white;
+    border: 1px solid #353E80;
+    color: #353E80;
+}
+
+.borda{
+    border: 2px solid #353E80;
+    border-radius: 5px;
+    opacity: 1;
+}
+.borda:focus {
+    border: 2px solid #697AFF;
+    outline: 0;
+    box-shadow:none
+  }
+.formulario{
+    margin-top: -20px;
+}
 
 .cor{
-    color: #697afe;
+    color: #353E80;
+}
+
+.texto{
+    padding: 120px 0;
+}
+.paragrafo{
+    max-width: 480px;
+}
+
+
+input, button{
+    padding: 5%;
+}
+
+.espaco{
+    margin-top: 120px;
+}
+
+@media screen and (max-width: 1181px){
+    .bg-login{
+        background: url("/assets/undraw_contact_us2.svg") 0% 0% no-repeat padding-box;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .espaco{
+        margin-top: 0;
+    }
+    .bg-login{
+        background: url("/assets/undraw_contact_us3.svg") 0% 0% no-repeat padding-box;
+    }
+}
+@media screen and (max-width: 871px){
+    .bg-login{
+        background: url("/assets/undraw_contact_us4.svg") 0% 0% no-repeat padding-box;
+    }
+}
+@media screen and (max-width: 767px){
+    .bg-login{
+        background: #353E80;
+    }
+    .form{
+        background: white;
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 0;
+    }
+    .texto{
+        display: none;
+    }
 }

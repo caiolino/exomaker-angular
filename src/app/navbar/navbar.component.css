@@ -18,6 +18,7 @@ nav a {
     margin-left: 50px;
 }
 .navbar-collapse a{
+    cursor: pointer;
     margin: 0;
 }
 .navbar-collapse ul a {
@@ -43,6 +44,12 @@ nav a {
     display: none;
 }
 
+a.active{
+    color: white;
+    border: 2px solid #353f80 ;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
 
 
 
@@ -52,6 +59,12 @@ nav a {
 
 
 /* TABLET */
+@media screen and (max-width: 991px){
+    .fixed-top{
+    position: relative;
+    top: auto;
+    }
+}
 @media screen and (max-width: 987px){
     .cont-hamburguer{
         margin-right: 30px;
@@ -114,7 +127,7 @@ nav a {
 }
 
 /* CORREÇÕES BUG NAVBAR */
-@media screen and (max-width: 1221px){
+@media screen and (max-width: 1236px){
     nav li, a{
         font-size: 0.9em;
     }
@@ -125,5 +138,10 @@ nav a {
 @media screen and (max-width: 1105px){
         nav li, a{
             font-size: 0.8em;
+        }
+    }
+@media screen and (max-width: 1038px){
+        nav li, a{
+            font-size: 0.7em;
         }
     }

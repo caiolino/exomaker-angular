@@ -164,7 +164,12 @@ figure.snip0078.hover.blue .foto {
 
 
 @media screen and (max-width: 991px){
-
+  .caixa1{
+    padding-top: 0;
+  }
+  .flex-main{
+    margin-top: 0;
+  }
   .cont-bg{
       display: flex;
       justify-content: center;
@@ -178,4 +183,3 @@ figure.snip0078.hover.blue .foto {
   }
     
 }
-

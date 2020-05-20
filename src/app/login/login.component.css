@@ -1,0 +1,89 @@
+h2{
+    font-weight: 510;
+}
+
+.bg-login{
+    background: transparent url('/assets/bg-login.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width:100%;
+}
+
+.button{
+    background: transparent linear-gradient(270deg, #353E80 0%, #697AFF 100%) 0% 0% no-repeat padding-box;
+    border-radius: 30px;
+    opacity: 1;
+    color: white;
+}
+.button:hover{
+    background: white;
+    border: 1px solid #353E80;
+    color: #353E80;
+}
+
+.borda{
+    border: 2px solid #353E80;
+    border-radius: 10px;
+    opacity: 1;
+}
+.borda:focus {
+    border: 2px solid #697AFF;
+    outline: 0;
+    box-shadow:none
+  }
+.formulario{
+    margin-top: -20px;
+}
+
+.cor{
+    color: #353E80;
+}
+.separacao{
+    background-color: white;
+    max-width: 20%;
+    height: 2px;
+    border-radius: 50px;
+    margin: 20px 0;
+    
+}
+.texto{
+    padding: 120px 0;
+}
+.paragrafo{
+    max-width: 480px;
+}
+
+.espaco{
+    margin-top:125px;
+}
+
+input, button{
+    padding: 5%;
+}
+
+@media screen and (max-width: 991px){
+    .bg-login{
+        background: linear-gradient(270deg, #353E80 0%, #697AFF 100%);
+    }
+
+    .espaco{
+        margin-top:0px;
+    }
+    .form{
+        background-color: white;
+        padding: 20px;
+        max-height: 380px;
+        border-radius: 10px;
+    }
+    .texto{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 575px){
+    .texto{
+        margin: 20px;
+    }
+    .form{
+        justify-content: center;
+        border-radius: 80px 10px 10px;
+    }
+}

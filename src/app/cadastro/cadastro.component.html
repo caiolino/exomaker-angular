@@ -1,36 +1,40 @@
-<div class="container mt-10">
+<div class="bg-color espaco"></div>
+<div class="container">
+    <div class="cont box">
+        <h2 class="d-flex justify-content-center mt-3">Cadastre-se</h2>
 
-    <h2 class="d-flex justify-content-center mt-3">Cadastre-se</h2>
+        <hr class="mb-4">
 
-    <hr>
+        <div class="form-grup">
+            <input type="text" name="nome" id="nome" class="form-control mb-3 borda" placeholder="Nome"
+                [(ngModel)]="user.nome">
+        </div>
 
-    <div class="form-grup">
-        <label for="nome" class="text-monospace mt-3">Nome:</label>
-        <input type="text" name="nome" id="nome" class="form-control text-monospace" placeholder="Digite aqui o nome" [(ngModel)]="user.nome">
+        <div class="form-grup">
+            <span>Ex: João@gmail.com</span>
+            <input type="email" name="email" id="email" class="form-control mb-3 borda" placeholder="Email"
+                [(ngModel)]=user.email>
+        </div>
+
+        <div class="form-grup">
+            <span>Minimo 6 caractéres</span>
+            <input type="password" name="senha" id="senha" class="form-control mb-3 borda" placeholder="Senha"
+                [(ngModel)]="user.senha">
+        </div>
+
+        <div class="form-grup">
+            <input type="password" name="senha" id="senha" class="form-control mb-3 borda" placeholder="Confirmar Senha"
+                [(ngModel)]="confirm.senha">
+        </div>
+
+        <div class="alert alert-danger" *ngIf="alerta" role="alert">
+            As senhas não correspondem!
+        </div>
+
+        <div class="d-flex justify-content-end mt-3 mb-3 flex">
+            <button type="button" class="btn btn-outline-info button" (click)="cadastrar()">Cadastrar</button>
+            <button type="button" routerLink='/login' class="btn btn-outline-info cancel">Cancelar</button>
+        </div>
     </div>
-
-    <div class="form-grup">
-        <label for="email" class="text-monospace mt-3">email:</label>
-        <input type="email" name="email" id="email" class="form-control text-monospace" placeholder="ex: joão@email.com" [(ngModel)]=user.email>
-    </div>
-
-    <div class="form-grup">
-        <label for="senha" class="text-monospace mt-3">senha:</label>
-        <input type="password" name="senha" id="senha" class="form-control text-monospace" placeholder="Digite aqui o senha" [(ngModel)]="user.senha">
-    </div>
-
-    <div class="form-grup">
-        <label for="senha" class="text-monospace mt-3">Confirmar senha:</label>
-        <input type="password" name="senha" id="senha" class="form-control text-monospace" placeholder="Digite aqui o senha" [(ngModel)]="confirm.senha">
-    </div>
-
-    <div class="alert alert-danger" *ngIf="alerta" role="alert">
-        As senhas não correspondem!
-      </div>
-
-    <div class="d-flex justify-content-end mt-3 mb-3">
-        <button type="button" class="btn btn-outline-info w-25" (click)="cadastrar()">Cadastrar</button>
-    </div>
-
 
 </div>
