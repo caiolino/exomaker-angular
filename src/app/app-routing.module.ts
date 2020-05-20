@@ -9,6 +9,7 @@ import { ProdutosComponent } from './produtos/produtos.component';
 import { Users } from './model/Users';
 import { UsersComponent } from './users/users.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'sobre', component: SobreComponent },
   { path: 'produtos', component: ProdutosComponent },
   { path: 'users', component: UsersComponent },
-  { path: 'cadastro', component: CadastroComponent }
+  { path: 'cadastro', component: CadastroComponent },
+  { path: 'login', component: LoginComponent }
 
 ];
 
