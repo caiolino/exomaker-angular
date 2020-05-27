@@ -10,6 +10,8 @@ import { Users } from './model/Users';
 import { UsersComponent } from './users/users.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { LoginComponent } from './login/login.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
+import { DeleteUserComponent } from './delete-user/delete-user.component';
 
 
 
@@ -24,7 +26,9 @@ const routes: Routes = [
   { path: 'produtos', component: ProdutosComponent },
   { path: 'users', component: UsersComponent },
   { path: 'cadastro', component: CadastroComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'edit-user/:id', component: EditUserComponent },
+  { path: 'delete-user/:id', component: DeleteUserComponent}
 
 ];
 

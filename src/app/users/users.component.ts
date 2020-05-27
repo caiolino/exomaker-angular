@@ -19,7 +19,6 @@ export class UsersComponent implements OnInit {
   }
 
   findAllUsers() {
-
     this.usersService.getAllUsers().subscribe((resp: Users[]) => {
       this.listaUsers = resp;
     })

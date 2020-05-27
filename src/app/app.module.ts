@@ -16,7 +16,9 @@ import { ProdutosComponent } from './produtos/produtos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersComponent } from './users/users.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
+import { DeleteUserComponent } from './delete-user/delete-user.component'
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { LoginComponent } from './login/login.component'
     ProdutosComponent,
     UsersComponent,
     CadastroComponent,
-    LoginComponent
+    LoginComponent,
+    EditUserComponent,
+    DeleteUserComponent
   ],
   imports: [
     BrowserModule,

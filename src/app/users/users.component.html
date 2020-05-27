@@ -14,7 +14,8 @@
             <hr>
             <p>Senha: (acho melhor não mostrar mas...) {{users.senha}}</p>
             <hr>
-            <button class="btn btn-outline-info"> Ver Perfil</button>
+            <button class="btn btn-outline-info" [routerLink]="['/edit-user', users.id]">Editar</button>
+            <button class="btn btn-outline-danger ml-3" [routerLink]="['/delete-user',users.id]">Excluir</button>
         </div>
     </div>
 </div>
