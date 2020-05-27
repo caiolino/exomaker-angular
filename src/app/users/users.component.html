@@ -9,13 +9,12 @@
         </div>
         <div class="card-body">
             <p>Id: {{users.id}}</p>
-            <hr>
             <p>email: {{users.email}}</p>
-            <hr>
-            <p>Senha: (acho melhor não mostrar mas...) {{users.senha}}</p>
-            <hr>
-            <button class="btn btn-outline-info" [routerLink]="['/edit-user', users.id]">Editar</button>
-            <button class="btn btn-outline-danger ml-3" [routerLink]="['/delete-user',users.id]">Excluir</button>
+            <p>Senha: {{users.senha}}</p>
+            <div class="card-footer d-flex justify-content-end">
+                <button class="btn btn-outline-info" [routerLink]="['/edit-user', users.id]">Editar</button>
+                <button class="btn btn-outline-danger ml-3" [routerLink]="['/delete-user',users.id]">Excluir</button>
+            </div>
         </div>
     </div>
 </div>

@@ -13,7 +13,7 @@ export class DeleteUserComponent implements OnInit {
   user: Users = new Users
   delOk: boolean = false
 
-  constructor(private usersService: UsersService,private route: ActivatedRoute, private router: Router) { }
+  constructor(private usersService: UsersService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     let id: number = this.route.snapshot.params['id']
@@ -28,16 +28,16 @@ export class DeleteUserComponent implements OnInit {
     })
   }
 
-  btnSim(){
-    this.usersService.deleteUser(this.user.id).subscribe(()=>{
+  btnSim() {
+    this.usersService.deleteUser(this.user.id).subscribe(() => {
       this.delOk = true
-      this.router.navigate(['/users'])
-      localStorage.setItem("delOK",this.delOk.toString())
+      //   this.router.navigate(['/users'])
+      // localStorage.setItem("delOK",this.delOk.toString())
     })
 
   }
 
-  btnNao(){
+  btnNao() {
     this.router.navigate(['/users'])
   }
 
