@@ -1,20 +1,21 @@
-<div class="container mt-5 pt-5">
+<div class="titulo mt-5 pt-5">
     <h1 class="d-flex justify-content-center pt-5">Lista de usuários</h1>
     <hr>
 </div>
-<div class="container mb-5 d-flex flex-wrap">
-    <div class="card mt-5 col-md-4" *ngFor="let users of listaUsers">
-        <div class="card-header">
-            <h5 class="card-title">Nome: {{users.nome}}</h5>
+<div class="mb-5 d-flex justify-content-center flex-wrap">
+
+    <div class="user-box" *ngFor="let users of listaUsers">
+        <div class="d-flex align-items-center">
+            <p class="id d-flex justify-content-conter align-items-center">{{users.id}}</p>
+            <h5 class="ml-3">{{users.nome}}</h5>
         </div>
-        <div class="card-body">
-            <p>Id: {{users.id}}</p>
-            <p>email: {{users.email}}</p>
-            <p>Senha: {{users.senha}}</p>
-            <div class="card-footer d-flex justify-content-end">
-                <button class="btn btn-outline-info" [routerLink]="['/edit-user', users.id]">Editar</button>
-                <button class="btn btn-outline-danger ml-3" [routerLink]="['/delete-user',users.id]">Excluir</button>
-            </div>
+        <hr>
+        <p>Email: {{users.email}}</p>
+        <p>Senha: *********</p>
+        <div class="d-flex justify-content-end">
+            <button class="btn btn-outline-info" [routerLink]="['/edit-user', users.id]">Editar</button>
+            <button class="btn btn-outline-danger ml-3" [routerLink]="['/delete-user',users.id]">Excluir</button>
         </div>
     </div>
+
 </div>
