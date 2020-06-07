@@ -2,12 +2,13 @@ main{
     width: 70%;
     margin: 0 auto;
     display: flex;
+    margin-top: 100px;
     
 }
 
 main > article{
     margin: 50px;
-    background-color: #697AFF;
+    background: transparent linear-gradient(270deg, #353E80 0%, #697AFF 100%) 0% 0% no-repeat padding-box;
     padding: 20px;
     color: #ffffff;
     border-radius: 10px;

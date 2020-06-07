@@ -35,6 +35,7 @@ export class EditUserComponent implements OnInit {
     }else{
       this.usersService.putUser(this.user).subscribe((resp: Users) => {
         this.user = resp
+        alert("Modificaçoes Salvas!")
         this.router.navigate(['/users'])
         location.assign('/users')
       })

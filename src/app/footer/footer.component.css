@@ -1,6 +1,6 @@
 footer{
     background-color: rgb(243, 243, 243);
-    box-shadow: 0 3px 5px #00000015 ;
+    box-shadow: 0 0 10px #00000069;
 }
 
 
@@ -45,8 +45,6 @@ ul{
     height: auto;
 } 
 
-
-
 @media screen and (max-width: 922px) {
     footer > div{
         width: 100%;
@@ -55,4 +53,9 @@ ul{
      footer > div >div >ul >li > a:hover{
         padding: 0;
         }
+    footer{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
   }

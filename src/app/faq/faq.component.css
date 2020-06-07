@@ -2,7 +2,19 @@
 .card-cor{
     padding: .75rem 1.25rem;
     margin-bottom: 0;
-    background-color:#353e81;
+    background: transparent linear-gradient(270deg, #353E80 0%, #697AFF 100%) 0% 0% no-repeat padding-box;
     border-bottom: 1px solid rgba(0,0,0,.125);
     border-radius: 5px;
+}
+
+.container{
+    margin-top: 150px;
+    margin-bottom: -150px;
+    font-weight: 800;
+    color:#353E80;
+}
+
+h1{
+    font-weight: 800;
+    color:#353E80;
 }

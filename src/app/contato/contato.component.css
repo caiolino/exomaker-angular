@@ -11,6 +11,7 @@ h4{
     background: transparent url('/assets/undraw_contact_us.svg') 0% 0% no-repeat padding-box;
     opacity: 1;
     width:100%;
+    padding-bottom: 50px;
 }
 
 .button{
