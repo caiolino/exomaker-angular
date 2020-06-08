@@ -29,4 +29,10 @@ export class UsersService {
   deleteUser(id:number){
     return this.http.delete(`http://93.188.161.223:9000/user/${id}`)
   }
+
+  findBynome(nome: String){
+    return this.http.delete(`http://93.188.161.223:9000/user/${nome}`)
+
+  }
+
 }

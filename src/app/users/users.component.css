@@ -22,8 +22,13 @@
     box-shadow: 0 0 10px #00000069;
 }
 
-btn{
-    font-weight: bold;
+
+.borda{
+    height: 50px;
+}
+
+.buscar{
+    height: 50px;
 }
 
 p{

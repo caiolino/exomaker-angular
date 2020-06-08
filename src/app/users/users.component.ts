@@ -12,6 +12,8 @@ export class UsersComponent implements OnInit {
 
   listaUsers: Users[];
 
+  nome: String;
+
   constructor(private usersService: UsersService) { }
 
   ngOnInit(): void {
@@ -22,7 +24,12 @@ export class UsersComponent implements OnInit {
     this.usersService.getAllUsers().subscribe((resp: Users[]) => {
       this.listaUsers = resp;
     })
+  }
 
+  findNome(){
+    this.usersService.findBynome(this.nome).subscribe((resp:Users[])=>{
+      this.listaUsers = resp
+    })
   }
 
 

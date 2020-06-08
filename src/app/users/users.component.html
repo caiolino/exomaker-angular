@@ -2,6 +2,13 @@
     <h1 class="d-flex justify-content-center pt-5">Lista de usuários</h1>
     <hr>
 </div>
+
+<div class="container d-flex">
+    <input type="text" name="titulo" id="titulo" class="form-control mb-3 borda" placeholder="buscar por nome" [(ngModel)]="nome">
+    <button class="btn btn-success ml-3 buscar" (click)=findNome()>buscar</button>
+
+</div>
+
 <div class="mb-5 d-flex justify-content-center flex-wrap">
 
     <div class="user-box" *ngFor="let users of listaUsers">
