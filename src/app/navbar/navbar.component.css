@@ -51,13 +51,6 @@ a.active{
     font-size: 1.1em;
 }
 
-
-
-
-/* media query */
-
-
-
 /* TABLET */
 @media screen and (max-width: 991px){
     .fixed-top{

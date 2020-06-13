@@ -12,6 +12,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { LoginComponent } from './login/login.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { DeleteUserComponent } from './delete-user/delete-user.component';
+import { ItemComponent } from './item/item.component';
 
 
 
@@ -28,7 +29,8 @@ const routes: Routes = [
   { path: 'cadastro', component: CadastroComponent },
   { path: 'login', component: LoginComponent },
   { path: 'edit-user/:id', component: EditUserComponent },
-  { path: 'delete-user/:id', component: DeleteUserComponent}
+  { path: 'delete-user/:id', component: DeleteUserComponent },
+  { path: 'item/:id', component: ItemComponent }
 
 ];
 

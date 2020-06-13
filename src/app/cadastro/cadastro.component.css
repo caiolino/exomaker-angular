@@ -1,3 +1,7 @@
+h4{
+    color:#353E80
+}
+
 .flex{
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +22,7 @@
 
 .box{
     padding: 30px;
-    margin-top: -130px;
+    margin-top: -190px;
     background-color: white;
     border-radius: 10px 10px;
     box-shadow: 0 0 10px #00000069

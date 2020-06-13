@@ -71,6 +71,14 @@ input, button{
 
 }
 
+@media screen and (max-width: 1264px){
+    .bg-login{
+        padding: 0;   
+    }
+
+}
+
+
 @media screen and (max-width: 991px){
     .bg-login{
         background: linear-gradient(270deg, #353E80 0%, #697AFF 100%);

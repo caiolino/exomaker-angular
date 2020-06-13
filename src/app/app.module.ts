@@ -18,7 +18,8 @@ import { UsersComponent } from './users/users.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { LoginComponent } from './login/login.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
-import { DeleteUserComponent } from './delete-user/delete-user.component'
+import { DeleteUserComponent } from './delete-user/delete-user.component';
+import { ItemComponent } from './item/item.component'
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { DeleteUserComponent } from './delete-user/delete-user.component'
     CadastroComponent,
     LoginComponent,
     EditUserComponent,
-    DeleteUserComponent
+    DeleteUserComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,

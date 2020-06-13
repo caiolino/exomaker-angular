@@ -4,12 +4,22 @@
         <h2 class="d-flex justify-content-center mt-3">Cadastre-se</h2>
 
         <hr class="mb-4">
-
+        <h4 class="text-center">Dados Pessoais</h4>
         <div class="form-grup">
             <input type="text" name="nome" id="nome" class="form-control mb-3 borda" placeholder="Nome"
                 [(ngModel)]="user.nome">
         </div>
 
+        <div class="form-grup">
+            <span>Apenas números</span>
+            <input type="text" name="numero" id="nome" class="form-control mb-3 borda" placeholder="Celular"
+                [(ngModel)]="user.nome">
+        </div>
+        <div class="form-grup">
+            <span>Apenas números</span>
+            <input type="text" name="cpf" id="nome" class="form-control mb-3 borda" placeholder="CPF"
+                [(ngModel)]="user.nome">
+        </div>
         <div class="form-grup">
             <span>Ex: João@gmail.com</span>
             <input type="email" name="email" id="email" class="form-control mb-3 borda" placeholder="Email"
@@ -26,7 +36,25 @@
             <input type="password" name="senha" id="senha" class="form-control mb-3 borda" placeholder="Confirmar Senha"
                 [(ngModel)]="confirm.senha">
         </div>
-
+        <h4 class="text-center">Endereço</h4>
+        <div class="form-grup">
+            <span>Apenas números</span>
+            <input type="text" name="cep" id="cep" class="form-control mb-3 borda" placeholder="CEP"
+                [(ngModel)]="user.nome">
+        </div>
+        <div class="form-grup">
+            <input type="text" name="endereco" id="endereco" class="form-control mb-3 borda" placeholder="Endereço"
+                [(ngModel)]="user.nome">
+        </div>
+        <div class="form-grup">
+            <input type="text" name="numero" id="numero" class="form-control mb-3 borda" placeholder="Número"
+                [(ngModel)]="user.nome">
+        </div>
+        <div class="form-grup">
+            <span>Não Necessário</span>
+            <input type="text" name="complemento" id="complemento" class="form-control mb-3 borda"
+                placeholder="Complemento" [(ngModel)]="user.nome">
+        </div>
         <div class="alert alert-danger" *ngIf="alerta" role="alert">
             As senhas não correspondem!
         </div>
